@@ -44,7 +44,13 @@ export default function ProductList() {
                       </Typography>
                       <Typography
                         variant="body2"
-                        sx={{ color: "text.secondary" }}
+                        sx={{
+                          color: "text.secondary",
+                          overflow: "hidden",
+                          display: "-webkit-box",
+                          WebkitBoxOrient: "vertical",
+                          WebkitLineClamp: 3, // Giới hạn số dòng hiển thị
+                        }}
                       >
                         {body}
                       </Typography>
